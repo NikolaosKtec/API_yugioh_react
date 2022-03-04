@@ -1,5 +1,5 @@
 
-    function Api_engine_yugioh() {
+    function cardTemplate() {
 
         const dataCard = {data:[{
             id: 0,
@@ -49,4 +49,5 @@
         );
     }
 
-    export {Api_engine_yugioh};
+   
+    export {cardTemplate};

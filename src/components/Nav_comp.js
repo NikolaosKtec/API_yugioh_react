@@ -1,5 +1,8 @@
 
+
+    
     function Nav_comp() {
+       
 
         return (
             <div className='nav_header'>
@@ -10,7 +13,7 @@
             </header>
             <nav>
                     <li>
-                        escolha aleatoria <button>Random</button>
+                        cartas mais famosas <button onClick={return_card}>aqui</button>
                     </li>
                     
                 </nav>
@@ -18,4 +21,14 @@
         );
     }
 
-export default Nav_comp;
+    function return_card() {
+        
+        /*fetch(api_engines(2))
+              .then(resp => resp.json())
+              .then((data)=> { card = data})
+                  
+        return (
+            card    
+        );*/
+    }
+ export {Nav_comp};

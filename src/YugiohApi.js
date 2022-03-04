@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import style from "./styles/style.module.css"
 import star from "./assets/level-stars.png"
-import {Api_engine_yugioh} from "./api/Api_engine_yugioh"
+import {cardTemplate} from "./api/cardTemplate"
+import { api_engines } from "./api/api_engines"
 
 
 import "./styles/styleGB.css"
@@ -9,14 +10,15 @@ import "./styles/styleGB.css"
 import {attributes_sets,race_sets,type_sets} from "./components/sets_att_rac_ty"
 
 function YugiohApi() {
-
-  useEffect(()=> {
-    fetch('https://db.ygoprodeck.com/api/v7/cardinfo.php?name=Jinzo')
+ 
+  const effCard = useEffect(()=> {
+    fetch(api_engines(2))
   .then(resp => resp.json())
   .then((data)=>setcardObj(data))
-  },[])  
- 
-const [card, setcardObj] = useState([Api_engine_yugioh]);
+  
+  },[<button/>]) 
+  
+const [card, setcardObj] = useState([cardTemplate]);
 
 
     
@@ -40,28 +42,24 @@ const [card, setcardObj] = useState([Api_engine_yugioh]);
     
 
    function setcard_one(){
-    console.log(card.data[0])
-
-      setid(card.data[0].id);
-      setname(card.data[0].name);	 
-		  settype(card.data[0].type);
-		  setdesc(card.data[0].desc);
-		  setatk(card.data[0].atk);
-		  setdef(card.data[0].def);
-		  setlevel(card.data[0].level);
-		  setrace(card.data[0].race);
-		  setattribute(card.data[0].attribute);
-		  setarchetype(card.data[0].archetype);
-		  setcardImg(card.data[0].card_images[0].image_url)
+    
+      setcardImg(card.card_images[0].image_url)
+      setid(card.id);
+      setname(card.name);	 
+		  settype(card.type);
+		  setdesc(card.desc);
+		  setatk(card.atk);
+		  setdef(card.def);
+		  setlevel(card.level);
+		  setrace(card.race);
+		  setattribute(card.attribute);
+		  setarchetype(card.archetype);
 		  setstars_img(star)
-		  setrace_img(race_sets(card.data[0].race))
-		  setattr_img(attributes_sets(card.data[0].attribute))
-		  settypecard(type_sets(card.data[0].type))     	
+		  setrace_img(race_sets(card.race))
+		  setattr_img(attributes_sets(card.attribute))
+		  settypecard(type_sets(card.type))     	
     }
 
-    function setcard_random() {
-      
-    }
 
     return (
 
@@ -95,19 +93,11 @@ const [card, setcardObj] = useState([Api_engine_yugioh]);
           <div className={style.card_assets}>
             <img className={style.card} src={cardImg} alt="erro de amostra!"/>
           </div>
-          <button className={style.button_m} onClick={setcard_one}> Jinzo </button>
+          <button className={style.button_m} onClick={setcard_one}> Escolha aleatória </button>
           
         </section>
         );
     
 } 
 
-  const navItem  = ()=> {
-    
-    return (
-      <nav>
-        
-      </nav>
-    );
-  }
 export default YugiohApi;
