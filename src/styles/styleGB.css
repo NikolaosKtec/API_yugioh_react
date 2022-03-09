@@ -1,33 +1,41 @@
     body {
         background-color: #40406b;
-
+        font-size: 12px;
+        margin: 0;
+        margin-left: 0.5rem;
+        width: 95vw;
     }
-    @media (min-width:455px) {
-     section {
-         margin-left: 0rem;
-         padding-left: 0%;
-     }   
+    
+    h2{
+        color: antiquewhite;
     }
+       
+    
     button {
         background-image: url('./../assets/bk_dark.jpg');
         background-position:center;
         color: thistle;
+        
     }
+
+
     .container {
         background-image: url('./../assets/bg_legacy.jpg');
-        background-position:center;
-        
-        
-        margin-left: 2rem;
+        background-position:center;    
         font-family: Verdana;
-        font-size: 0.8rem;
-        
+    }
+
+
+    
+    @media screen and (min-device-width:1280px) {
+    .container {
+        margin-left: 2rem;
+        font-size: 1rem;
         display: grid;
         grid-template-columns: 3fr 4fr 2fr;
-       
+        
     }
     .header {
-       
         grid-column-start: 2;   
         grid-column-end: 2;
         grid-row-start: 1;
@@ -35,10 +43,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-       
-        
     }
-
     .nav_header {
         margin-left: 1.4rem;
         background-color: #37376F;
@@ -47,16 +52,51 @@
         padding:auto; 
         margin-bottom: 2rem; 
     }
+    footer {
+        margin-top: 1rem;
+        display: flex;
+       
+    }
+    }
+    @media (max-device-width:410px) and (min-device-width:250px) {
+        .container {
+            
+            font-size:calc(14px*1rem);
+            display: grid;
+            grid-template-columns:1fr;
+            
+        }
+        .header {
+            grid-row-start: 1;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+        }
+        .nav_header {
+           
+            background-color: #37376F;
+            display: flex;
+            flex-direction: column;
+            color: thistle;
+            margin-bottom: 2rem; 
+        }
+        footer {
+            
+            
+           
+            display: flex;
+            flex-direction: column;
+           
+        }
+    }
     nav {
-        margin-left: auto;
+        
         margin-top: 1.8rem;
     }
     li {
         list-style-type: none;
-        width: 300px;   
+          
     }
-    footer {
-        margin-top: 2rem;
-        display: flex;
-    }
+   
     

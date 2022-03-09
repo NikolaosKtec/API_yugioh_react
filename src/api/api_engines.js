@@ -9,15 +9,15 @@ function api_engines(props) {
       link_set = 'https://db.ygoprodeck.com/api/v7/randomcard.php' //random
       break;
     }
-
-    
-
-
   return (
     link_set
   );
   }
 
+  /*function api_link (){
+
+    
+  }*/
 
 
 export {api_engines};
