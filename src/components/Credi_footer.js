@@ -12,7 +12,7 @@ import img_dark from "./../assets/bk_dark.jpg"
             <div>
                 <p>por: Nikolaos Ferreira @2022</p>
                 <ul>
-                    <li>link da api:<a href='https://db.ygoprodeck.com/api-guide/'>YugiohApi</a>
+                    <li>link da api:<a href='https://db.ygoprodeck.com/api-guide/' target='_blank'>YugiohApi</a>
                     </li>
                 </ul>
                 </div>

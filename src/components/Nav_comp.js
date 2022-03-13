@@ -1,34 +1,21 @@
 
-
+import "./../styles/styleGB.css"
     
     function Nav_comp() {
        
 
         return (
-            <div className='nav_header'>
-           
+            <nav className='nav_top'>
             <header>
-                <h1>yu-gi-oh Cards</h1>
-                
+                <h1><a href="https://db.ygoprodeck.com/" target='_blank'>yu-gi-oh Cards</a></h1>
             </header>
-            <nav>
+            <ul>
                     <li>
-                        cartas mais famosas <button onClick={return_card}>aqui</button>
-                    </li>
-                    
-                </nav>
-            </div>
+                        <a href="#" target='_blank'>cartas mais famosas </a> 
+                    </li> 
+            </ul>
+            </nav>
         );
     }
 
-    function return_card() {
-        
-        /*fetch(api_engines(2))
-              .then(resp => resp.json())
-              .then((data)=> { card = data})
-                  
-        return (
-            card    
-        );*/
-    }
  export {Nav_comp};

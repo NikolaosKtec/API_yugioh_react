@@ -5,40 +5,47 @@
         border-bottom: solid  #3C3CFF;
         
     } 
+
     .atributes_header {
        margin-bottom: 1rem;
        padding-bottom: 0.5rem;
        border-bottom: 2px solid #3C3CFF;
        
     }
+
     .content_atributes {
         padding-left: 1rem;       
     }
+
     .content_bottom {
         margin-top: auto;
         
     }
+
+    .card {
+        max-width: calc(100px + 15vw)
+     } 
+
     .img_content {
         padding-left: 10px;
     }
-    @media screen and (min-device-width:1280px){
-    .button_m {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        
-    }
-    .card {
-        max-width: 280px;
-     }
-     .card_assets {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 1;
 
-        }      
+    @media screen and (min-device-width:1280px){
+        .button_m {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        
+        }
+   
+        .card_assets {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 1;
+
+            }      
     }    
     @media (max-device-width:410px) and (min-device-width:250px) {
         .button_m {
@@ -47,15 +54,13 @@
             
         }
         .card {
-            max-width: 270px;
-         }
+            max-width: calc(100px + 60vw)
+         } 
          .card_assets {
             margin: auto;
             grid-row-start: 2;
             
-    
         }      
-    }
-        
+    }   
        
     

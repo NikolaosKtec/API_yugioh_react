@@ -12,8 +12,6 @@ import {attributes_sets,race_sets,type_sets} from "./components/sets_att_rac_ty"
 
 function YugiohApi() {
  
-   /*useEffect(()=> {
-  },[<button/>]) */
   
 const [card, setcardObj] = useState([cardTemplate]);
 
@@ -37,7 +35,7 @@ const [card, setcardObj] = useState([cardTemplate]);
     
 
       async function  setcard_one(){
-      console.log(card)
+     
       setcardImg(cardD)
       fetch(api_engines(2))
       .then(resp => resp.json())
