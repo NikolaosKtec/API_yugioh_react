@@ -63,7 +63,7 @@ const [card, setcardObj] = useState([cardTemplate]);
         
         <div className="container">
          
-          <article className="header">
+          <article className="container_content">
           
             <h2 className={style.text_reader}>{name}</h2>
             
