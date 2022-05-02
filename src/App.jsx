@@ -1,6 +1,6 @@
 import YugiohApi from  "./YugiohApi"
-import {Nav_comp} from "./components/Nav_comp.js"
-import Credi_footer from "./components/Credi_footer.js";
+import {Nav_comp} from "./components/Nav_comp.jsx"
+import Credi_footer from "./components/Credi_footer.jsx";
  const App = ()=> {
     
     return (<>

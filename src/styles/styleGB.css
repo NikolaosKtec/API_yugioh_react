@@ -28,6 +28,14 @@
         
     }
     
+   div.conBtn{
+       display: flex;
+      
+       justify-content:center;
+       grid-column-start: 2;
+      
+   }
+    
    header ,ul {
     display: inline-block;
    }
@@ -107,6 +115,12 @@
         .container_content {
             color: thistle;
             grid-row-start: 2;
+        }
+
+        div.conBtn{
+            grid-column-start: 1;
+           
+           
         }
 
         nav ul {

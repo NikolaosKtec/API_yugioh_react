@@ -34,13 +34,16 @@ const [card, setcardObj] = useState([cardTemplate]);
      const [typeCard_img, settypecard] = useState([])
     
 
+    
       async function  setcard_one(){
-     
+      let link = api_engines(1)
       setcardImg(cardD)
-      fetch(api_engines(2))
+      fetch(link)
       .then(resp => resp.json())
-      .then((data)=>setcardObj(data))
+      .then((data)=>{ setcardObj(data)
+         console.log(data)})
       .then(()=>{
+        console.log(card)
       setcardImg(card.card_images[0].image_url);
       setid(card.id);
       setname(card.name);	 
@@ -56,6 +59,32 @@ const [card, setcardObj] = useState([cardTemplate]);
 		  setrace_img(race_sets(card.race));
 		  setattr_img(attributes_sets(card.attribute));
 		  settypecard(type_sets(card.type));
+      })	
+    }
+      async function  setcard_two(){
+        let link = api_engines(2)
+      setcardImg(cardD)
+      fetch(link)
+      .then(resp => resp.json())
+      .then((data)=>{ setcardObj(data)
+        console.log(data)})
+      .then(()=>{
+        console.log(card)
+      setcardImg(card.data[0].card_images[0].image_url);
+      setid(card.data[0].id);
+      setname(card.data[0].name);	 
+		  settype(card.data[0].type);
+		  setdesc(card.data[0].desc);
+		  setatk(card.data[0].atk);
+		  setdef(card.data[0].def);
+		  setlevel(card.data[0].level);
+		  setrace(card.data[0].race);
+		  setattribute(card.data[0].attribute);
+		  setarchetype(card.data[0].archetype);
+		  setstars_img(star);
+		  setrace_img(race_sets(card.data[0].race));
+		  setattr_img(attributes_sets(card.data[0].attribute));
+		  settypecard(type_sets(card.data[0].type));
       })	
     }
 
@@ -91,7 +120,10 @@ const [card, setcardObj] = useState([cardTemplate]);
           <div className={style.card_assets}>
             <img className={style.card} src={cardImg} alt={'ops'}/>
           </div>
+         <div className= "conBtn">
          <button className={style.button_m} onClick={setcard_one} > Escolha aleatória </button>
+         <button className={style.button_m} onClick={setcard_two} > exodia </button>
+         </div>
           
         </div>
         

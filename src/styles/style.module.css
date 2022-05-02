@@ -21,7 +21,7 @@
     }
 
     .button_m {
-        grid-column-start: 2;
+       width: 20vw;
     }
 
     .card {
@@ -65,7 +65,10 @@
             margin: auto;
             grid-row-start: 3;
             
-        }      
+        }
+        .button_m {
+            width: 50vw;
+         }      
     }   
        
     
