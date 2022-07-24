@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.e7603fb1.css",
+    "main.js": "/react-gh-pages/static/js/main.5988fc84.js",
+    "static/media/cardDefault.jpg": "/react-gh-pages/static/media/cardDefault.f9ce25d7e444b20e2ff6.jpg",
+    "static/media/bg_legacy.jpg": "/react-gh-pages/static/media/bg_legacy.f37d1e8c76c6d347bc55.jpg",
+    "static/media/bk_dark.jpg": "/react-gh-pages/static/media/bk_dark.b320ef6f53829e633b52.jpg",
+    "static/media/Normal.png": "/react-gh-pages/static/media/Normal.e75a33ede2ebe6f77f7c.png",
+    "static/media/Wind.png": "/react-gh-pages/static/media/Wind.977b27f616a9f6da6fc4.png",
+    "static/media/Earth.png": "/react-gh-pages/static/media/Earth.dba4be0ae8221bd89569.png",
+    "static/media/Divine.png": "/react-gh-pages/static/media/Divine.e42f89850b1040660a11.png",
+    "static/media/Light.png": "/react-gh-pages/static/media/Light.1bb058b9dc7f542652d6.png",
+    "static/media/Water.png": "/react-gh-pages/static/media/Water.f1ade5c281e6bcc44690.png",
+    "static/media/Wyrm-DG.png": "/react-gh-pages/static/media/Wyrm-DG.9b77c6eb2ac31dc0a8a5.png",
+    "static/media/Dark.png": "/react-gh-pages/static/media/Dark.ccb2308fcc168530cba5.png",
+    "static/media/Fire.png": "/react-gh-pages/static/media/Fire.8fbb53040147558ba06e.png",
+    "static/media/Counter.webp": "/react-gh-pages/static/media/Counter.6c0c54c5543552202f87.webp",
+    "static/media/SpliceLarge.webp": "/react-gh-pages/static/media/SpliceLarge.61ccd20b60c430a00e35.webp",
+    "static/media/Equip.webp": "/react-gh-pages/static/media/Equip.c107f917bbd8109d2bfe.webp",
+    "static/media/Quick-Play.webp": "/react-gh-pages/static/media/Quick-Play.46b1c85b558b53f4f419.webp",
+    "static/media/Field.webp": "/react-gh-pages/static/media/Field.624a42f5f08a4ecf6c92.webp",
+    "static/media/Ritual.webp": "/react-gh-pages/static/media/Ritual.82166ccbf3cd240b1cc0.webp",
+    "static/media/Continuous.webp": "/react-gh-pages/static/media/Continuous.56aa553323fd15c7edf4.webp",
+    "index.html": "/react-gh-pages/index.html",
+    "main.e7603fb1.css.map": "/react-gh-pages/static/css/main.e7603fb1.css.map",
+    "main.5988fc84.js.map": "/react-gh-pages/static/js/main.5988fc84.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7603fb1.css",
+    "static/js/main.5988fc84.js"
+  ]
+}
